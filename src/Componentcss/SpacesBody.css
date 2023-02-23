@@ -1,0 +1,65 @@
+
+#h-p{
+    padding-top:5rem;
+    text-align: start;
+    padding-left: 12rem;
+}
+
+
+#h-p p{
+    font-size:small;
+    color: rgb(138, 134, 134) ;
+}
+
+
+#Spaces-main-box{
+    padding-top: 10px;
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+#id{
+    display: grid;
+    height: 100vh;
+    width: 70%;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    gap: 1rem; 
+}
+
+
+
+
+#Spaces-card-box{
+    height: 30vh;
+    border-radius: 10px;
+    border: 1px solid rgb(211, 206, 206);
+}
+
+
+#Big-Small #Img-a{
+    width: 13.3rem;
+    height: 4rem; 
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#Big-Small #Img-b{
+    width: 3rem;
+    height: 3rem; 
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-top: -2rem;
+}
+
+
+p{
+    font-size: small;
+}
+
+span{
+    font-weight: 900;
+}

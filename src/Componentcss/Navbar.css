@@ -1,0 +1,93 @@
+.mainnav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+
+
+
+.nav{
+    height: 45px;
+    width: 80%;
+    align-items: center;   
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+
+.image-quora img{
+    height: 2rem;
+    width: 4rem;
+}
+
+
+
+/* .image-b img{
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid black;
+    border-radius: 50px; 
+} */
+
+
+
+.searchquora{
+    position: relative;
+}
+
+
+
+.searchquora i{
+    position: relative;
+    left: 1.5rem;
+}
+
+
+
+.searchquora input{
+    width: 16rem;
+    padding-left: 2rem;
+    border: 1px solid #ccc;
+}
+
+
+
+.tryquora input{
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 6rem;
+}
+
+
+.add-button{
+    border-top-left-radius:1rem ;
+    border-bottom-left-radius:1rem ;
+}
+
+
+.create-post{
+    border-top-right-radius:1rem ;
+    border-bottom-right-radius:1rem ;
+}
+
+
+.li{
+    font-size:small;
+    margin-left: 15px;
+}
+
+
+.active{
+    color: red;
+}
+
+.inactive{
+    color: gray;
+}

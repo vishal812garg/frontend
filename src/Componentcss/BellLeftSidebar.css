@@ -1,0 +1,40 @@
+.BellsidebarLeft{
+    width: 10rem;
+    height: 100vh;
+    background-color: rgb(241, 242, 242);
+    margin-top: 1rem; 
+  }
+
+  .BellsidebarLeft p{
+    text-align: start;
+    font-size: small;
+    font-weight: 600;
+  }
+  
+  .BellsidebarLeft .Bell-card {
+    width: 7rem;
+    height:5vh;
+    text-align: start;
+    padding-top:1px;
+    margin-top: 1px;
+    border: none;
+    /* border: 1px solid blue; */
+  }
+  
+  .BellsidebarLeft .Bell-card:hover{
+    background-color: rgb(248, 233, 233);
+    
+  }
+  
+
+  .Bell-item span{
+    font-size: x-small;
+    font-weight: 400;
+  }
+  
+  
+  hr{
+    margin-right: 25px;
+    margin-bottom: 2px;
+    color: rgb(147, 149, 152);
+  }

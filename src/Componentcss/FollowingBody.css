@@ -1,0 +1,55 @@
+.main-box{
+    height: 100vh;
+    width: 30rem;
+    margin-left: 30%;margin-top: 20%;
+    /* border:1px solid black ; */
+}
+
+
+.main-box h4{
+   text-align: start;
+}
+
+.main-box p{
+    text-align: start;
+ }
+
+.body-box{
+    padding-top: 5px;
+    border-top: 1px solid black;
+    border-color: rgb(213, 214, 214);
+}
+
+
+.upper-body-box{
+    display: flex;
+    text-align: start;
+}
+
+
+.upper-body-box img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.upper-body-box .name{
+    font-size:small;
+    font-weight: 2rem;
+    font-weight: 600;
+}
+
+.upper-body-box .follow{
+    color: rgb(156, 153, 153) ;
+    font-size:x-small;
+}
+
+
+.lower-body-box{
+    text-align: start;
+    padding-left: 2.5rem;
+    color: rgb(93, 91, 91) ;
+    font-size:x-small;
+    font-weight: 500;
+}

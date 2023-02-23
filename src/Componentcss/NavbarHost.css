@@ -1,0 +1,41 @@
+#dropdown img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid black;
+    padding: 0px;
+    border-radius: 50px;
+}
+
+#dropdown:hover{
+    border: 1px solid orange;
+}
+
+
+#dropdown #Image {
+    margin-left: 15px; 
+}
+
+
+#dropdown #Image img{
+    margin-bottom: 15px;
+}
+
+
+#dropdown-menu{
+    height: 60vh;
+    width: 15rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+
+.i .s{
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+.i i{
+    font-size:medium;
+}

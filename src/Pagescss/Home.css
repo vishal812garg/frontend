@@ -1,0 +1,40 @@
+#Mainbody{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content:center;
+}
+
+#body{
+    width: 80%;
+    height: 100vh;
+    /* border: 5px solid black; */
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50px;
+}
+
+
+#Lsidebar{
+    position: fixed;
+}
+
+
+#Mainupper{
+    padding-left: 15%;
+}
+
+#Rsidebar img{
+    width: 80%;
+    height: 40vh;
+    padding-top: 10px;
+    
+}
+
+ #Rsidebar{
+    /* border: 2px solid red; */
+    width: 35%;
+    position:fixed;
+    left: 60%;
+}

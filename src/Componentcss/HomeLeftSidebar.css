@@ -1,0 +1,54 @@
+.Left{
+  width: 8rem;
+  height: 100vh;
+  padding-top: 4rem;
+  background-color: rgb(241, 242, 242);
+  /* border: 1px solid red; */
+}
+
+.Left .Leftcard {
+  text-align: start;
+  height: 2vh;
+  width: 7rem;
+  padding-bottom: 2rem;
+  border: none;
+  /* border: 1px solid blue; */
+}
+
+.Left .Leftcard:hover{
+  background-color: rgb(228, 230, 230);
+}
+
+ .image-name img{
+  height: 1rem;
+  width: 1rem;
+}
+
+.image-name span{
+  font-size: x-small;
+  font-weight: 600;
+}
+
+
+.lower-item{
+  /* border: 1px solid black; */
+  margin-top: 2rem;
+  height:20vh;
+  text-align: start;
+}
+
+.lower-item span{
+  color: rgb(147, 149, 152);
+  font-size: small;
+  /* text-decoration:none; */
+  padding-left:2px;
+}
+
+.lower-item span:hover{
+  text-decoration: underline;
+}
+
+hr{
+  margin-right: 15px;
+  color: rgb(147, 149, 152);
+}

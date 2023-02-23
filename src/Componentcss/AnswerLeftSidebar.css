@@ -1,0 +1,39 @@
+.sidebarLeft{
+    width: 8rem;
+    height: 100vh;
+    background-color: rgb(241, 242, 242);
+    margin-top: 1rem; 
+  }
+
+  .sidebarLeft p{
+    text-align: start;
+    font-size: small;
+    font-weight: 600;
+  }
+  
+  .sidebarLeft .card {
+    width: 6.5rem;
+    height:5vh;
+    align-items:start;
+    padding-top:1px;
+    margin-top: 1px;
+    border: none;
+    /* border: 1px solid blue; */
+  }
+  
+  .sidebarLeft .card:hover{
+    background-color: rgb(228, 230, 230);
+  }
+  
+
+  .item span{
+    font-size: x-small;
+    font-weight: 400;
+  }
+  
+  
+  hr{
+    margin-right: 25px;
+    margin-bottom: 2px;
+    color: rgb(147, 149, 152);
+  }
