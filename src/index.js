@@ -4,13 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
-
+import { ThemProvider } from "./Pagesjs/CreateContex";
+import { ModalProvider } from './Componentjs/ModalContex'; 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Router>
-    <App />
-  </Router> 
+  <ModalProvider>
+  <ThemProvider>
+       <Router>
+       <App />
+      </Router>
+  </ThemProvider>
+  </ModalProvider>
   </React.StrictMode>
 );
 

@@ -1,11 +1,16 @@
 import { NavLink } from "react-router-dom"
 import "../Componentcss/Navbar.css";
-import NavbarHost from "./NavbarHost";
-import Modal from "./ShowModal";
+import NavbarHost from "./DropdownNavbar";
+import { useThem } from "../Pagesjs/CreateContex";
 export default function Navbar(){
+
+  const { theme, setThem } = useThem();
+      console.log(theme)
+
+
     return(
 
-        <div className="mainnav">
+        <div className="mainnav" style={{backgroundColor:theme}}>
 
         {/* Navbar   */}
         <nav className="nav">
@@ -66,15 +71,14 @@ export default function Navbar(){
            {/*DropDown*/ }  
             
           <div className="btn-group dropdown">
-               <button type="button" className="btn btn-danger add-button">
+               <button type="button" className="btn btn-danger add-button" >
                     Add question
                </button>
               <button type="button" className="btn btn-danger dropdown-toggle dropdown-toggle-split create-post" data-bs-toggle="dropdown" aria-expanded="false">
                  <span class="visually-hidden">Toggle Dropright</span>
               </button>
            <ul className="dropdown-menu">
-               <Modal/>
-               <NavLink to="#"><li className="li"><i className="fa-solid fa-pen"></i>Create post</li></NavLink>
+               <NavLink to="#"><li className="li" data-bs-toggle="modal" data-bs-target="#exampleModal"><i className="fa-solid fa-pen"></i>Create post</li></NavLink>
            </ul>
          </div>
  

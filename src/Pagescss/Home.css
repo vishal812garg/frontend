@@ -1,14 +1,14 @@
 #Mainbody{
     width: 100%;
     height: 100vh;
-    /* border: 1px solid black; */
+    
     display: flex;
     justify-content:center;
 }
 
 #body{
     width: 80%;
-    height: 100vh;
+    height: 100%;
     /* border: 5px solid black; */
     display: flex;
     justify-content:space-between;
@@ -22,11 +22,11 @@
 
 
 #Mainupper{
-    padding-left: 15%;
+    padding-left: 18%;
 }
 
 #Rsidebar img{
-    width: 80%;
+    width: 70%;
     height: 40vh;
     padding-top: 10px;
     

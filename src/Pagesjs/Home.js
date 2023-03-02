@@ -1,6 +1,6 @@
 import "../Pagescss/Home.css";
-import HomeLeftSidebar from "../Componentjs/HomeLeftSidebar";
-import HomeMainupper from "../Componentjs/HomeMainupper";
+import LeftSidebarHome from "../Componentjs/LeftSidebarHome";
+import MainupperHome from "../Componentjs/MainupperHome";
 
 export default function Home(){
     return(
@@ -11,12 +11,13 @@ export default function Home(){
                  <div id="body">
 
                        <div id="Lsidebar">
-                            <HomeLeftSidebar/>         
+                            <LeftSidebarHome/>         
                        </div>
 
                        <div id="Mainupper">
-                            <HomeMainupper/>
+                            <MainupperHome/>
                        </div>
+
 
                        <div id="Rsidebar">
                             <div>

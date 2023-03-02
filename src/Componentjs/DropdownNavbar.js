@@ -1,9 +1,13 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../Componentcss/NavbarHost.css";
+import { useThem } from "../Pagesjs/CreateContex";
 export default function NavbarHost(){
      
     // Link Style
      let TextDecoration = {textDecoration:"none"} 
+
+     const { theme, setThem} = useThem();
+      console.log(theme)
 
     return(
         
@@ -21,58 +25,58 @@ export default function NavbarHost(){
                        
                       <div className="i">
                            <span><i class="fa-solid fa-message"></i></span>
-                           <Link to="#" style={TextDecoration}>
+                           <NavLink to="#" style={TextDecoration}>
                                 <span className="s">Messages</span>  
-                           </Link>               
+                           </NavLink>               
                            
                       </div>
 
                       <div className="i">
                            <span><i class="fa-solid fa-bullhorn"></i></span>
-                           <Link to="#" style={TextDecoration}>
+                           <NavLink to="#" style={TextDecoration}>
                                 <span className="s">Create Ad</span>  
-                           </Link>
+                           </NavLink>
                       </div>
 
                       <div className="i">
                            <span><i class="fa-solid fa-dollar-sign"></i></span>
-                           <Link to="#" style={TextDecoration}>
+                           <NavLink to="#" style={TextDecoration}>
                                 <span className="s">Monetization</span>  
-                           </Link> 
+                           </NavLink> 
                       </div>
 
                       <div className="i">
                            <span><i class="fa-sharp fa-solid fa-chart-simple"></i></span>
-                           <Link to="#" style={TextDecoration}>
+                           <NavLink to="#" style={TextDecoration}>
                                 <span className="s">Your Content and Stats</span>  
-                           </Link>
+                           </NavLink>
                       </div>
 
                       <div className="i">
                            <span><i class="fa-solid fa-bookmark"></i></span>
-                           <Link to="#" style={TextDecoration}>
+                           <NavLink to="#" style={TextDecoration}>
                                 <span className="s">Bookmarks</span>  
-                           </Link>
+                           </NavLink>
                       </div>
 
                       <div className="i">
                            <span><i class="fa-solid fa-pen-to-square"></i></span>
-                           <Link to="#" style={TextDecoration}>
+                           <NavLink to="#" style={TextDecoration}>
                                 <span className="s">Drafts</span>  
-                           </Link>
+                           </NavLink>
                       </div>
 
                       <div className="i">
                            <span><i class="fa-solid fa-star-of-life"></i></span>
-                           <Link to="#" style={TextDecoration}>
+                           <NavLink to="#" style={TextDecoration}>
                                 <span className="s">Try Quora+</span>  
-                           </Link>
+                           </NavLink>
                       </div>
                      
                      <hr/>
 
                      <div>
-                        <span>Dark Mode</span>
+                        <NavLink><span onMouseOver={()=>setThem (theme === "white" ? "black" : "white")}>Dark Mode</span></NavLink>
                      </div> 
 
                      <div>
@@ -96,31 +100,30 @@ export default function NavbarHost(){
                     {/* Links Div */}
                <div className="lower-item">
 
-                      <Link to="#" style={TextDecoration}><span>About</span></Link>
+                      <NavLink to="#" style={TextDecoration}><span>About</span></NavLink>
 
                           <span>.</span>
-                      <Link to="#" style={TextDecoration}><span>Careers</span></Link>
+                      <NavLink to="#" style={TextDecoration}><span>Careers</span></NavLink>
                            <span>.</span><br/>
 
-                      <Link to="#" style={TextDecoration}><span>Terms</span></Link>
+                      <NavLink to="#" style={TextDecoration}><span>Terms</span></NavLink>
 
                            <span>.</span>
-                      <Link to="#" style={TextDecoration}><span>Privacy</span></Link>
+                      <NavLink to="#" style={TextDecoration}><span>Privacy</span></NavLink>
                            <span>.</span><br/>
 
-                      <Link to="#" style={TextDecoration}><span>Acceptable Use</span></Link>
+                      <NavLink to="#" style={TextDecoration}><span>Acceptable Use</span></NavLink>
                             <span>.</span><br/>
 
-                      <Link to="#" style={TextDecoration}><span>Businesses</span></Link>
-
+                      <NavLink to="#" style={TextDecoration}><span>Businesses</span></NavLink>
                             <span>.</span>
-                      <Link to="#" style={TextDecoration}><span>Press</span></Link>
+                      <NavLink to="#" style={TextDecoration}><span>Press</span></NavLink>
                             <span>.</span><br/>
 
-                      <Link to="#" style={TextDecoration}><span>Your Ad Choices</span></Link>
+                      <NavLink to="#" style={TextDecoration}><span>Your Ad Choices</span></NavLink>
                             <span>.</span><br/>
 
-                      <Link to="#" style={TextDecoration}><span>Grievance officer</span></Link>
+                      <NavLink to="#" style={TextDecoration}><span>Grievance officer</span></NavLink>
 
                     </div>
   

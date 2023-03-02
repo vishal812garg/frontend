@@ -1,34 +1,14 @@
-import "../Componentcss/HomeMainupper.css"
-// import { NavLink } from "react-router-dom"
-import Modal from "./ShowModal"
-export default function HomeMainupper(){
-      // Cards
-      let info = [
-     {
-        nameimage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnGrsutX0Cc6AqQ0SAG8W7rmUPset21613jQ&usqp=CAU",
-        name:"Amazon Web Services (AWS)",
-        Sponsored:"Sponsored",
-        pera:`Build & train machine learning models fast. Get started for free.
-              AWS removes the complexity of building, training, and deploying machine learning models at any scale.`,
-        lowerimage:"https://www.veritis.com/wp-content/uploads/2018/12/AWS-cloud-migration-tools-and-services.jpg"
-     },
-     {
-        nameimage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Tbl_T2OdXP9x4QqcEdW5bnf8XIqJOBAEXu-XeeKYpmYRUeC2dgsidX21jFL3295q9gU&usqp=CAU",
-        name:"Divi",
-        Sponsored:"Sponsored",
-        pera:`This changes everything! Explore the future of WordPress.
-              There is a reason why Divi has become the most popular WordPress theme in the world. Find out why.`,
-        lowerimage:"https://edyrecommends.b-cdn.net/wp-content/uploads/2021/07/Divi-Responsive-Helper-2-1024x559.jpg"
-     },
-     {
-        nameimage:"https://play-lh.googleusercontent.com/deyz04czPzpKP09vrklnBHU4S-gT_o6wLt2jCZeeifdh53VW6YfBffj8bEPh4xzG6A",
-        name:"Grammarly",
-        Sponsored:"Sponsored",
-        pera:`Free English writing tool.
-              Write in clear, mistake-free English with our free writing app. Try now!`,
-        lowerimage:"https://i.ytimg.com/vi/scZVLCB1aX0/maxresdefault.jpg"
-     }
-   ]
+import "../Componentcss/MainupperHome.css"
+import { NavLink } from "react-router-dom"
+// import { useState } from "react"
+ import Modal from "./Modal"
+ import { useModal } from "./ModalContex"
+export default function MainupperHome(){
+      
+      const {nameimage, name, Sponsored, pera, lowerimage, info} = useModal();
+      console.log(info);
+   
+
     return(
         <>
            {/* Main Body Div */}
@@ -45,14 +25,14 @@ export default function HomeMainupper(){
 
 
                         {/* Font Div */}
-                        <div id="font">
-                              <Modal/> 
-                              <div data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ask</div>
-                              <div ><i className="fa-solid fa-pen-to-square"></i>Answer</div>
-                              <div ><i className="fa-solid fa-pen"></i>Post</div>
-                              
-                        </div>
-                  </div>
+                        <div className="d-flex justify-content-around ">
+                                 
+                               <Modal/> 
+                              <NavLink to="#" className="text-decoration-none text-secondary"><div  data-bs-toggle="modal" data-bs-target="#exampleModal"><i className="fa-solid fa-pen"></i>Post</div></NavLink>
+                              <NavLink to="#" className="text-decoration-none text-secondary"><div><i class="fa-solid fa-question"></i>Ask</div></NavLink> 
+                              <NavLink to="#" className="text-decoration-none text-secondary"><div ><i className="fa-solid fa-pen-to-square"></i>Answer</div></NavLink>
+                               
+                      </div>
 
 
 
@@ -109,7 +89,7 @@ export default function HomeMainupper(){
                   </div>
 
              </div> 
-
+         </div>
         </>
     )
 }

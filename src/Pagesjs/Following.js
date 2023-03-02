@@ -1,5 +1,5 @@
 
-import HomeLeftSidebar from "../Componentjs/HomeLeftSidebar";
+import HomeLeftSidebar from "../Componentjs/LeftSidebarHome";
 import FollowingBody from "../Componentjs/FollowingBody"; 
 export default function Following(){
     return(

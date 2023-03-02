@@ -1,4 +1,4 @@
-import Modal from "./ShowModal";
+
 import "../Componentcss/SpacesBody.css";
 export default function SpacesBody(){
       
@@ -82,8 +82,8 @@ export default function SpacesBody(){
 
                                         <div>
                                             <p>{item.Pera}</p>
-                                            <Modal/> 
-                              <div data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ask</div>
+                                        
+                                        <div data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ask</div>
                                         </div>
 
                                    </div>
